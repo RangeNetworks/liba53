@@ -9,4 +9,6 @@ compiler: gcc
 
 script:
   - make
+  - sudo make install
+  - sudo make installtest
 
