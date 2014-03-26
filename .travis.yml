@@ -1,0 +1,12 @@
+language: cpp
+compiler: gcc
+
+#before_install:
+# - sudo apt-get install -qq libxyz
+
+#install:
+#  - sh bootstrap.sh
+
+script:
+  - make
+
