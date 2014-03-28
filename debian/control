@@ -9,7 +9,7 @@ Standards-Version: 3.7.3
 Package: liba53
 Section: comm
 Priority: optional
-Architecture: i386
+Architecture: any
 Essential: no
-Depends: libc6-i686, pkg-config
+Depends: libc6, pkg-config
 Description: A5/3 call encryption library

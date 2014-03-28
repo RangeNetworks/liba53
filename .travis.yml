@@ -1,6 +1,9 @@
 language: cpp
 compiler: gcc
 
+notifications:
+  irc: "chat.freenode.net#openbts"
+
 #before_install:
 # - sudo apt-get install -qq libxyz
 
@@ -8,7 +11,5 @@ compiler: gcc
 #  - sh bootstrap.sh
 
 script:
-  - make
-  - sudo make install
-  - sudo make installtest
+  - dpkg-buildpackage
 
