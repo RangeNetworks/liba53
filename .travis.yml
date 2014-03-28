@@ -2,7 +2,13 @@ language: cpp
 compiler: gcc
 
 notifications:
-  irc: "chat.freenode.net#openbts"
+  irc:
+    channels:
+      - "chat.freenode.net#openbts"
+    template:
+      - "%{repository} : %{message} : %{build_url}"
+    on_success: change
+    on_failure: always
 
 #before_install:
 # - sudo apt-get install -qq libxyz
