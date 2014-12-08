@@ -17,5 +17,5 @@ notifications:
 #  - sh bootstrap.sh
 
 script:
-  - dpkg-buildpackage
+  - dpkg-buildpackage -us -uc
 
