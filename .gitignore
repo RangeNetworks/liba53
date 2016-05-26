@@ -4,7 +4,7 @@
 *.so.*
 build-arch-stamp
 build-indep-stamp
-debian/debhelper.log
+debian/*debhelper*
 debian/files
 debian/substvars
-debian/tmp/
+debian/liba53*

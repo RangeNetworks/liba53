@@ -72,10 +72,10 @@ install-arch:
 	dh_installdirs -s
 
 	# Add here commands to install the arch part of the package into
-	# debian/tmp.
-	mkdir -p debian/tmp/usr/lib
-	mkdir -p debian/tmp/usr/include
-	$(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
+	# debian/{package}.
+	mkdir -p debian/liba53/usr/lib
+	mkdir -p debian/liba53/usr/include
+	$(MAKE) DESTDIR=$(CURDIR)/debian/liba53 install
 
 	dh_install -s
 
